@@ -1,0 +1,176 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --gold: #c8a84b;
+  --gold-light: #e8c87a;
+  --gold-dim: #8a7233;
+  --bg: #0e0d0b;
+  --bg2: #161410;
+  --bg3: #1e1b16;
+  --bg4: #26231c;
+  --border: rgba(200,168,75,0.15);
+  --border-dim: rgba(255,255,255,0.06);
+  --text: #e8e0cc;
+  --text-dim: #8a8070;
+  --text-muted: #4a4438;
+  --red: #c0392b;
+  --green: #2e7d32;
+  --radius: 4px;
+  --radius-lg: 8px;
+}
+
+html, body, #root {
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg2); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+h1, h2, h3, .display {
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+button {
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+}
+
+a { color: var(--gold); text-decoration: none; }
+a:hover { color: var(--gold-light); }
+
+.gold { color: var(--gold); }
+.dim { color: var(--text-dim); }
+.muted { color: var(--text-muted); }
+
+.card {
+  background: var(--bg2);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+}
+
+.progress-wrap {
+  height: 4px;
+  background: var(--bg4);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  background: var(--gold);
+  border-radius: 2px;
+  transition: width 0.6s ease;
+}
+.progress-fill.green { background: #4caf50; }
+.progress-fill.red { background: var(--red); }
+
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th {
+  text-align: left;
+  padding: 8px 12px;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border-bottom: 0.5px solid var(--border-dim);
+  font-family: 'Cinzel', serif;
+  font-weight: 400;
+}
+td {
+  padding: 10px 12px;
+  border-bottom: 0.5px solid var(--border-dim);
+  color: var(--text);
+}
+tr:last-child td { border-bottom: none; }
+tr:hover td { background: rgba(200,168,75,0.04); }
+
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 2px;
+  font-size: 11px;
+  font-weight: 500;
+  background: rgba(200,168,75,0.12);
+  color: var(--gold);
+  border: 0.5px solid rgba(200,168,75,0.25);
+}
+.badge.green { background: rgba(76,175,80,0.12); color: #66bb6a; border-color: rgba(76,175,80,0.25); }
+.badge.red { background: rgba(192,57,43,0.12); color: #ef5350; border-color: rgba(192,57,43,0.25); }
+
+input, select {
+  background: var(--bg3);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  padding: 8px 12px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  width: 100%;
+  outline: none;
+  transition: border-color 0.15s;
+}
+input:focus, select:focus { border-color: var(--gold-dim); }
+select option { background: var(--bg3); }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.15s;
+}
+.btn:hover { background: var(--bg3); border-color: var(--gold-dim); color: var(--gold); }
+.btn.primary {
+  background: var(--gold);
+  color: #0e0d0b;
+  border-color: var(--gold);
+}
+.btn.primary:hover { background: var(--gold-light); border-color: var(--gold-light); }
+
+.divider {
+  height: 0.5px;
+  background: var(--border-dim);
+  margin: 16px 0;
+}
+
+.metric-card {
+  background: var(--bg3);
+  border: 0.5px solid var(--border-dim);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+}
+.metric-label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin-bottom: 8px; font-family: 'Cinzel', serif; }
+.metric-val { font-size: 28px; font-weight: 600; color: var(--gold); font-family: 'Cinzel', serif; }
+.metric-sub { font-size: 11px; color: var(--text-dim); margin-top: 4px; }
+
+.ornament {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-muted);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-family: 'Cinzel', serif;
+  margin: 20px 0 16px;
+}
+.ornament::before, .ornament::after {
+  content: '';
+  flex: 1;
+  height: 0.5px;
+  background: var(--border-dim);
+}
