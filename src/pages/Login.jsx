@@ -21,9 +21,9 @@ export default function Login() {
   const handleSubmit = (e) => {
     e.preventDefault()
     setError('')
-    if (!name) { setError('Select your name'); return }
+    if (!name) { setError('Please select your name'); return }
     if (!config?.members[name]) { setError('Member not found'); return }
-    if (config.members[name] !== pin) { setError('Incorrect PIN'); return }
+    if (config.members[name] !== pin) { setError('Incorrect PIN — ask Chili Peppers if you forgot'); return }
     login(name)
     nav('/')
   }
@@ -35,29 +35,35 @@ export default function Login() {
       alignItems: 'center',
       justifyContent: 'center',
       background: 'var(--bg)',
-      backgroundImage: 'radial-gradient(ellipse at 50% 0%, rgba(200,168,75,0.05) 0%, transparent 70%)',
+      padding: '24px 16px',
     }}>
-      <div style={{ width: 360, padding: '0 16px' }}>
-        <div style={{ textAlign: 'center', marginBottom: 32 }}>
+      <div style={{ width: '100%', maxWidth: 380 }}>
+
+        {/* Logo */}
+        <div style={{ textAlign: 'center', marginBottom: 28 }}>
           <div style={{
-            width: 64, height: 64, borderRadius: '50%',
-            border: '1.5px solid var(--gold-dim)',
-            background: 'var(--bg2)',
-            margin: '0 auto 20px',
+            width: 60, height: 60, borderRadius: 18,
+            background: 'var(--primary)',
+            margin: '0 auto 16px',
             display: 'flex', alignItems: 'center', justifyContent: 'center',
+            boxShadow: '0 8px 24px rgba(245,158,11,0.35)',
           }}>
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="1.5">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#000" strokeWidth="2.5" strokeLinecap="round">
               <path d="M12 2L3 7v5c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V7L12 2z"/>
             </svg>
           </div>
-          <h1 style={{ fontSize: 22, marginBottom: 6, color: 'var(--gold)' }}>HOT Clan</h1>
-          <p style={{ color: 'var(--text-dim)', fontSize: 13 }}>Kingdom 305 · Member portal</p>
+          <h1 style={{ fontSize: 26, fontFamily: 'Outfit, sans-serif', fontWeight: 700, color: 'var(--text)', marginBottom: 4 }}>
+            HOT Clan
+          </h1>
+          <p style={{ color: 'var(--text-muted)', fontSize: 14 }}>Kingdom 305 · Member portal</p>
         </div>
 
-        <div className="card">
+        {/* Card */}
+        <div className="card" style={{ padding: 24 }}>
           <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+
             <div>
-              <label style={{ display: 'block', fontSize: 10, textTransform: 'uppercase', letterSpacing: '.08em', color: 'var(--text-muted)', fontFamily: 'Cinzel, serif', marginBottom: 6 }}>
+              <label style={{ display: 'block', fontSize: 12, fontWeight: 600, color: 'var(--text-dim)', marginBottom: 6 }}>
                 Your name
               </label>
               <select value={name} onChange={e => { setName(e.target.value); setError('') }}>
@@ -67,7 +73,7 @@ export default function Login() {
             </div>
 
             <div>
-              <label style={{ display: 'block', fontSize: 10, textTransform: 'uppercase', letterSpacing: '.08em', color: 'var(--text-muted)', fontFamily: 'Cinzel, serif', marginBottom: 6 }}>
+              <label style={{ display: 'block', fontSize: 12, fontWeight: 600, color: 'var(--text-dim)', marginBottom: 6 }}>
                 PIN
               </label>
               <input
@@ -80,22 +86,27 @@ export default function Login() {
             </div>
 
             {error && (
-              <div style={{ fontSize: 12, color: '#ef5350', padding: '8px 12px', background: 'rgba(192,57,43,0.1)', border: '0.5px solid rgba(192,57,43,0.25)', borderRadius: 'var(--radius)' }}>
+              <div style={{
+                fontSize: 13, color: '#991b1b', padding: '10px 12px',
+                background: '#fee2e2', border: '1px solid #fca5a5', borderRadius: 'var(--radius)',
+              }}>
                 {error}
               </div>
             )}
 
-            <button type="submit" className="btn primary" style={{ justifyContent: 'center', marginTop: 4 }}>
+            <button type="submit" className="btn primary" style={{ justifyContent: 'center', padding: '12px 20px', marginTop: 4, fontSize: 15 }}>
               Enter the clan
             </button>
           </form>
 
-          <div style={{ marginTop: 16, paddingTop: 16, borderTop: '0.5px solid var(--border-dim)', textAlign: 'center' }}>
-            <p style={{ fontSize: 12, color: 'var(--text-muted)' }}>
-              Don't know your PIN? Ask <span style={{ color: 'var(--gold)' }}>Chili Peppers</span>
+          <div style={{ marginTop: 16, paddingTop: 16, borderTop: '1px solid var(--border)', textAlign: 'center' }}>
+            <p style={{ fontSize: 13, color: 'var(--text-muted)' }}>
+              Don't know your PIN? Ask{' '}
+              <span style={{ color: 'var(--primary-dark)', fontWeight: 600 }}>Chili Peppers</span>
             </p>
           </div>
         </div>
+
       </div>
     </div>
   )

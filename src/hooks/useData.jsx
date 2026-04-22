@@ -1,6 +1,32 @@
 import { useState, useEffect } from 'react'
 import Papa from 'papaparse'
 
+// Maps raw CSV `source` values → scoring JSON keys
+function normalizeSource(raw) {
+  if (!raw) return ''
+  const s = raw.trim().replace(/}$/, '') // strip trailing typo "}"
+
+  // Direct matches
+  if (s === 'Bank') return 'Bank'
+
+  // "Level 5 Crypt", "Level 10 rare Crypt", "Level 15 epic Crypt" etc. → "L5 Crypt" etc.
+  const levelMatch = s.match(/^Level (\d+)\s+(.+)$/)
+  if (levelMatch) return `L${levelMatch[1]} ${levelMatch[2]}`
+
+  // "Level X-Y Vault of the Ancients" and "Rise of the Ancients event" → "Ancients vaults"
+  if (/Vault of the Ancients/i.test(s) || /Rise of the Ancients/i.test(s)) return 'Ancients vaults'
+
+  // "Epic Ancient squad" → "Epic Monster Chests"
+  if (/Epic Ancient/i.test(s)) return 'Epic Monster Chests'
+
+  // Ragnarok / Olympus
+  if (/Ragnar/i.test(s)) return 'Ragnarok Chests'
+  if (/Olympus/i.test(s)) return 'Olympus Chests'
+
+  // Arena, Clan wealth, Story, tournaments, etc. → kept as-is (will score 0)
+  return s
+}
+
 export function useData() {
   const [data, setData] = useState({ roster: [], gifts: [], scoring: {}, config: null, loading: true })
 
@@ -22,6 +48,8 @@ export function useData() {
       if (giftsCSV) {
         const parsed = Papa.parse(giftsCSV, { header: true, skipEmptyLines: true })
         gifts = parsed.data
+          .filter(row => row.from && row.from !== 'from')
+          .map(row => ({ ...row, source: normalizeSource(row.source) }))
       }
 
       setData({ roster, gifts, scoring: scoringData.scoring, categories: scoringData.categories, config, loading: false })
