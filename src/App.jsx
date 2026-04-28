@@ -6,6 +6,8 @@ import Login from './pages/Login.jsx'
 import Dashboard from './pages/Dashboard.jsx'
 import Leaderboard from './pages/Leaderboard.jsx'
 import { Events } from './pages/Events.jsx'
+import Breakdown from './pages/Breakdown.jsx'
+import { Tips } from './pages/Tips.jsx'
 import { Profile, Roster, Handbook, Gifts } from './pages/Pages.jsx'
 
 const LEADERSHIP = ['Leader', 'Superior']
@@ -58,6 +60,8 @@ function AppRoutes() {
       <Route path="/"            element={<Guard><Dashboard /></Guard>} />
       <Route path="/leaderboard" element={<Guard><Leaderboard /></Guard>} />
       <Route path="/events"      element={<Guard><Events /></Guard>} />
+      <Route path="/breakdown"   element={<Guard><Breakdown /></Guard>} />
+      <Route path="/tips"        element={<Guard><Tips /></Guard>} />
       <Route path="/profile"     element={<Guard><Profile /></Guard>} />
       <Route path="/handbook"    element={<Guard><Handbook /></Guard>} />
       <Route path="/gifts"       element={<Guard><Gifts /></Guard>} />

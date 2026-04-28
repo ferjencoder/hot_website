@@ -1,23 +1,44 @@
 import { useAuth } from '../hooks/useAuth.jsx'
 import { useData, calcPoints } from '../hooks/useData.jsx'
+import { useChestData } from '../hooks/useChestData.jsx'
 import { useMemo, useState } from 'react'
 
 /* ─── Profile ───────────────────────────────────────────────── */
 export function Profile() {
   const { member } = useAuth()
-  const { gifts, scoring, config, roster, loading } = useData()
-  const points = useMemo(() => calcPoints(gifts, scoring), [gifts, scoring])
-  const myStats = points[member] || { points: 0, chests: 0, breakdown: {} }
+  const { roster, loading: rosterLoading } = useData()
+  const {
+    weeks, weekIndex, setWeekIndex,
+    currentWeek, weeklyTarget, scoring,
+    loading: chestLoading,
+  } = useChestData()
+
   const myRoster = roster.find(r => r.name === member) || {}
-  const target = config?.weekly_target || 8000
-  const pct = Math.min(100, Math.round(myStats.points / target * 100))
+  const loading  = rosterLoading || chestLoading
+
+  // Find this member in the selected week
+  const myStats = currentWeek?.members?.find(m => m.name === member)
+    || { points: 0, chests: 0, met_target: false, breakdown: {} }
+
+  const target   = weeklyTarget || 1000
+  const pct      = Math.min(100, Math.round(myStats.points / target * 100))
   const initials = member ? member.split(' ').map(w => w[0]).join('').slice(0,2).toUpperCase() : '?'
 
   if (loading) return <div style={{ padding: 40, color: 'var(--text-muted)', textAlign: 'center' }}>Loading...</div>
 
   return (
     <div>
-      <div className="page-header"><h1>My Profile</h1></div>
+      <div className="page-header" style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', flexWrap: 'wrap', gap: 10 }}>
+        <div><h1>My Profile</h1></div>
+        {weeks.length > 1 && (
+          <select value={weekIndex} onChange={e => setWeekIndex(Number(e.target.value))}
+            style={{ width: 'auto', fontSize: 13, padding: '6px 10px' }}>
+            {weeks.map((w, i) => (
+              <option key={w.start} value={i}>{i === 0 ? `📅 ${w.label} (current)` : w.label}</option>
+            ))}
+          </select>
+        )}
+      </div>
       <div className="page-body" style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
 
         <div className="card">
@@ -41,7 +62,9 @@ export function Profile() {
         </div>
 
         <div className="card">
-          <div style={{ fontSize: 12, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '.05em', color: 'var(--text-muted)', marginBottom: 12 }}>Weekly target</div>
+          <div style={{ fontSize: 12, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '.05em', color: 'var(--text-muted)', marginBottom: 12 }}>
+            {currentWeek ? currentWeek.label : 'Weekly target'}
+          </div>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: 8 }}>
             <span style={{ fontSize: 32, fontWeight: 700, color: 'var(--primary-dark)', fontFamily: 'Outfit,sans-serif' }}>{myStats.points.toLocaleString()}</span>
             <span style={{ fontSize: 14, color: 'var(--text-muted)' }}>/ {target.toLocaleString()}</span>
@@ -57,20 +80,26 @@ export function Profile() {
         </div>
 
         <div className="card">
-          <div style={{ fontSize: 12, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '.05em', color: 'var(--text-muted)', marginBottom: 12 }}>Chest breakdown</div>
-          {Object.keys(myStats.breakdown).length === 0
-            ? <p style={{ color: 'var(--text-muted)', fontSize: 13 }}>No chests recorded yet.</p>
+          <div style={{ fontSize: 12, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '.05em', color: 'var(--text-muted)', marginBottom: 12 }}>My chest breakdown</div>
+          {!myStats.breakdown || Object.values(myStats.breakdown).every(v => v === 0)
+            ? <p style={{ color: 'var(--text-muted)', fontSize: 13 }}>No chests recorded for this week.</p>
             : <table>
-                <thead><tr><th>Source</th><th style={{ textAlign: 'right' }}>Count</th><th style={{ textAlign: 'right' }}>Pts ea.</th><th style={{ textAlign: 'right' }}>Total</th></tr></thead>
+                <thead><tr><th>Chest type</th><th style={{ textAlign: 'right' }}>Count</th><th style={{ textAlign: 'right' }}>Pts ea.</th><th style={{ textAlign: 'right' }}>Total</th></tr></thead>
                 <tbody>
-                  {Object.entries(myStats.breakdown).sort((a,b)=>b[1]-a[1]).map(([src,cnt]) => (
-                    <tr key={src}>
-                      <td>{src}</td>
-                      <td style={{ textAlign: 'right' }}>{cnt}</td>
-                      <td style={{ textAlign: 'right', color: 'var(--text-muted)' }}>{scoring[src]??0}</td>
-                      <td style={{ textAlign: 'right', fontWeight: 700, color: 'var(--primary-dark)' }}>{cnt*(scoring[src]??0)}</td>
-                    </tr>
-                  ))}
+                  {Object.entries(myStats.breakdown)
+                    .filter(([, cnt]) => cnt > 0)
+                    .sort((a, b) => (b[1] * (scoring[b[0]] ?? 0)) - (a[1] * (scoring[a[0]] ?? 0)))
+                    .map(([src, cnt]) => (
+                      <tr key={src}>
+                        <td>{src}</td>
+                        <td style={{ textAlign: 'right' }}>{cnt}</td>
+                        <td style={{ textAlign: 'right', color: 'var(--text-muted)' }}>{scoring[src] ?? 0}</td>
+                        <td style={{ textAlign: 'right', fontWeight: 700, color: 'var(--primary-dark)' }}>
+                          {(cnt * (scoring[src] ?? 0)).toLocaleString()}
+                        </td>
+                      </tr>
+                    ))
+                  }
                 </tbody>
               </table>
           }
@@ -181,6 +210,107 @@ export function Handbook() {
   )
 }
 
+
+/* ─── Daily free gift links ─────────────────────────────────── */
+const DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+
+const DAILY_GIFTS = [
+  { day: 'Monday',    reward: '500 Gold',                   emoji: '🪙' },
+  { day: 'Tuesday',   reward: '+100% XP Bonus for 1 hour',  emoji: '⚡' },
+  { day: 'Wednesday', reward: '2500 Flare Oil',              emoji: '🔥' },
+  { day: 'Thursday',  reward: '25% March Speed Up ×5',       emoji: '🚀' },
+  { day: 'Friday',    reward: '500 Gold',                   emoji: '🪙' },
+  { day: 'Saturday',  reward: '15 min Building Boost ×4',   emoji: '🏗️' },
+  { day: 'Sunday',    reward: '3h Building Speed Up ×1',    emoji: '🏗️' },
+]
+
+const GIFT_LINKS = {
+  android: {
+    label: '📱 Android',
+    links: {
+      Monday:    'https://totalbattle.onelink.me/Xsl6/h3n9bz4l',
+      Tuesday:   'https://totalbattle.onelink.me/Xsl6/atjav1j0',
+      Wednesday: 'https://totalbattle.onelink.me/Xsl6/xp7gbljw',
+      Thursday:  'https://totalbattle.onelink.me/Xsl6/gbwfnf2t',
+      Friday:    'https://totalbattle.onelink.me/Xsl6/e08dg3he',
+      Saturday:  'https://totalbattle.onelink.me/Xsl6/shl7uy9z',
+      Sunday:    'https://totalbattle.onelink.me/Xsl6/hk7nqk5m',
+    },
+  },
+  totalbattle: {
+    label: '🌐 TotalBattle.com',
+    links: {
+      Monday:    'https://totalbattle.com/ru?present=gold',
+      Tuesday:   'https://totalbattle.com/ru?present=xp',
+      Wednesday: 'https://totalbattle.com/ru?present=tar',
+      Thursday:  'https://totalbattle.com/ru?present=march25',
+      Friday:    'https://totalbattle.com/ru?present=gold500',
+      Saturday:  'https://totalbattle.com/ru?present=speedups15',
+      Sunday:    'https://totalbattle.com/ru/?present=speedups3',
+    },
+  },
+  triumph: {
+    label: '🏛️ Triumph',
+    links: {
+      Monday:    'https://triumph.totalbattle.com/ru?present=gold',
+      Tuesday:   'https://triumph.totalbattle.com/ru?present=xp',
+      Wednesday: 'https://triumph.totalbattle.com/ru?present=tar',
+      Thursday:  'https://triumph.totalbattle.com/ru?present=march25',
+      Friday:    'https://triumph.totalbattle.com/ru?present=gold500',
+      Saturday:  'https://triumph.totalbattle.com/ru?present=speedups15',
+      Sunday:    'https://triumph.totalbattle.com/ru?present=speedups3',
+    },
+  },
+}
+
+function DailyGifts() {
+  const [platform, setPlatform] = useState('android')
+  const todayName = DAYS[new Date().getDay()]
+  const links = GIFT_LINKS[platform].links
+
+  return (
+    <div className="card">
+      <div style={{ fontSize: 12, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '.05em', color: 'var(--text-muted)', marginBottom: 12 }}>
+        Daily Free Gifts
+      </div>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginBottom: 16 }}>
+        {Object.entries(GIFT_LINKS).map(([key, val]) => (
+          <button key={key} onClick={() => setPlatform(key)}
+            className={`btn${platform === key ? ' active' : ''}`}
+            style={{ fontSize: 12, padding: '5px 12px' }}>
+            {val.label}
+          </button>
+        ))}
+      </div>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+        {DAILY_GIFTS.map(({ day, reward, emoji }) => {
+          const isToday = day === todayName
+          return (
+            <a key={day} href={links[day]} target="_blank" rel="noopener noreferrer"
+              style={{
+                display: 'flex', alignItems: 'center', gap: 12,
+                padding: '10px 14px', borderRadius: 'var(--radius-lg)',
+                border: `1.5px solid ${isToday ? 'var(--primary)' : 'var(--border)'}`,
+                background: isToday ? 'var(--primary-bg)' : 'var(--bg3)',
+                textDecoration: 'none', transition: 'all .15s',
+              }}>
+              <span style={{ fontSize: 20 }}>{emoji}</span>
+              <div style={{ flex: 1 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                  <span style={{ fontSize: 13, fontWeight: 700, color: isToday ? 'var(--primary-dark)' : 'var(--text)' }}>{day}</span>
+                  {isToday && <span className="badge" style={{ fontSize: 10, padding: '1px 7px' }}>Today</span>}
+                </div>
+                <div style={{ fontSize: 12, color: 'var(--text-muted)', marginTop: 1 }}>{reward}</div>
+              </div>
+              <span style={{ fontSize: 16, color: isToday ? 'var(--primary-dark)' : 'var(--text-muted)' }}>→</span>
+            </a>
+          )
+        })}
+      </div>
+    </div>
+  )
+}
+
 /* ─── Chests (renamed from Gifts) ──────────────────────────── */
 export function Gifts() {
   const { gifts, scoring, config, loading } = useData()
@@ -250,6 +380,9 @@ export function Gifts() {
             <div className="metric-sub">{topCrypters.length} active players</div>
           </div>
         </div>
+
+        {/* Daily free gifts */}
+        <DailyGifts />
 
         {/* Top Crypters */}
         <div className="card">

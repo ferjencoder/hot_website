@@ -8,9 +8,9 @@ const LEADERSHIP = ['Leader', 'Superior']
 const mobileNav = [
   { to: '/',            label: 'Home',    end: true, icon: 'M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z M9 22V12h6v10' },
   { to: '/leaderboard', label: 'Ranks',            icon: 'M8 12H4v9h4zm6-6h-4v15h4zm6-6h-4v21h4z' },
-  { to: '/events',      label: 'Events',            icon: 'M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01' },
-  { to: '/gifts',       label: 'Chests',             icon: 'M20 12v10H4V12M22 7H2v5h20V7zM12 22V7M12 7H7.5a2.5 2.5 0 010-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 000-5C13 2 12 7 12 7z' },
-  { to: '/profile',     label: 'Profile',            icon: 'M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2M12 11a4 4 0 100-8 4 4 0 000 8z' },
+  { to: '/tips',        label: 'Guide',             icon: 'M12 2a10 10 0 100 20 10 10 0 000-20zm0 6v4m0 4h.01' },
+  { to: '/gifts',       label: 'Chests',            icon: 'M20 12v10H4V12M22 7H2v5h20V7zM12 22V7M12 7H7.5a2.5 2.5 0 010-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 000-5C13 2 12 7 12 7z' },
+  { to: '/profile',     label: 'Profile',           icon: 'M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2M12 11a4 4 0 100-8 4 4 0 000 8z' },
 ]
 
 // Sidebar — full nav including leadership-only items
@@ -21,6 +21,7 @@ const sidebarNav = [
   { to: '/gifts',       label: 'Chests',                icon: 'M20 12v10H4V12M22 7H2v5h20V7zM12 22V7M12 7H7.5a2.5 2.5 0 010-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 000-5C13 2 12 7 12 7z', leadership: false },
   { to: '/profile',     label: 'My Profile',           icon: 'M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2M12 11a4 4 0 100-8 4 4 0 000 8z', leadership: false },
   { to: '/handbook',    label: 'Handbook',             icon: 'M4 19.5A2.5 2.5 0 016.5 17H20M4 19.5A2.5 2.5 0 014 17V4h16v13H6.5',      leadership: false },
+  { to: '/tips',        label: 'Monster Guide',         icon: 'M12 2a10 10 0 100 20 10 10 0 000-20zm0 6v4m0 4h.01',                       leadership: false },
   { to: '/roster',      label: 'Roster 🔒',            icon: 'M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75', leadership: true },
 ]
 
@@ -51,7 +52,9 @@ export default function Layout({ children }) {
       <header className="app-bar">
         <div className="app-bar-brand">
           <div className="app-bar-logo">
-            <img width="64" height="64" viewBox="0 0 24 24" fill="none" src="https://res.cloudinary.com/ferjen/image/upload/q_auto/f_auto/v1776433276/TB/logo/HOT_HookedOnTB.png" alt="HOT_clan_logo"/>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#000" strokeWidth="2.5" strokeLinecap="round">
+              <path d="M12 2L3 7v5c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V7L12 2z"/>
+            </svg>
           </div>
           <span className="app-bar-name">HOT Clan</span>
         </div>
@@ -62,7 +65,9 @@ export default function Layout({ children }) {
       <aside className="sidebar">
         <div className="sidebar-brand">
           <div className="sidebar-logo">
-            <img width="64" height="64" viewBox="0 0 24 24" fill="none" src="https://res.cloudinary.com/ferjen/image/upload/q_auto/f_auto/v1776433276/TB/logo/HOT_HookedOnTB.png" alt="HOT_clan_logo" />
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#000" strokeWidth="2.5" strokeLinecap="round">
+              <path d="M12 2L3 7v5c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V7L12 2z"/>
+            </svg>
           </div>
           <div>
             <div className="sidebar-name">HOT Clan</div>
@@ -116,5 +121,3 @@ export default function Layout({ children }) {
     </div>
   )
 }
-
- 
