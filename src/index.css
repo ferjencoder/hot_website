@@ -103,12 +103,7 @@ button { cursor: pointer; font-family: inherit; }
 
 .app-bar-brand { display: flex; align-items: center; gap: 8px; }
 
-.app-bar-logo {
-  width: 30px; height: 30px;
-  /*background: var(--primary);*/
-  border-radius: 8px;
-  display: flex; align-items: center; justify-content: center;
-}
+/* .app-bar-logo replaced by direct <img> tag */
 
 .app-bar-name {
   font-family: 'Outfit', sans-serif;
@@ -196,7 +191,7 @@ button { cursor: pointer; font-family: inherit; }
 }
 .sidebar-logo {
   width: 34px; height: 34px;
-  /*background: var(--primary);*/
+  background: var(--primary);
   border-radius: 10px;
   display: flex; align-items: center; justify-content: center;
   flex-shrink: 0;

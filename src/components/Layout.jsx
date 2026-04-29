@@ -51,11 +51,11 @@ export default function Layout({ children }) {
       {/* Mobile top bar */}
       <header className="app-bar">
         <div className="app-bar-brand">
-          <div className="app-bar-logo">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#000" strokeWidth="2.5" strokeLinecap="round">
-              <path d="M12 2L3 7v5c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V7L12 2z"/>
-            </svg>
-          </div>
+          <img
+            src="https://res.cloudinary.com/ferjen/image/upload/q_auto/f_auto/v1776433276/TB/logo/HOT_HookedOnTB.png"
+            alt="HOT Clan"
+            style={{ width: 36, height: 36, objectFit: 'contain', borderRadius: 8, flexShrink: 0 }}
+          />
           <span className="app-bar-name">HOT Clan</span>
         </div>
         <div className="avatar" style={{ width: 32, height: 32, fontSize: 11 }}>{initials}</div>
@@ -64,11 +64,11 @@ export default function Layout({ children }) {
       {/* Desktop sidebar */}
       <aside className="sidebar">
         <div className="sidebar-brand">
-          <div className="sidebar-logo">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#000" strokeWidth="2.5" strokeLinecap="round">
-              <path d="M12 2L3 7v5c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V7L12 2z"/>
-            </svg>
-          </div>
+          <img
+            src="https://res.cloudinary.com/ferjen/image/upload/q_auto/f_auto/v1776433276/TB/logo/HOT_HookedOnTB.png"
+            alt="HOT Clan"
+            style={{ width: 38, height: 38, objectFit: 'contain', borderRadius: 8, flexShrink: 0 }}
+          />
           <div>
             <div className="sidebar-name">HOT Clan</div>
             <div className="sidebar-sub">Kingdom 305</div>

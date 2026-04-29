@@ -1,0 +1,714 @@
+{
+  "members": {
+    "Chili Peppers": {
+      "status": "active",
+      "joined": "2026-04-11",
+      "last_seen": "2026-04-20",
+      "rank": "Soldier",
+      "level": "4",
+      "might": "869096",
+      "location": "K:305 X:604 Y:526"
+    },
+    "hottie BOSS": {
+      "status": "active",
+      "joined": "2026-04-11",
+      "last_seen": "2026-04-20",
+      "rank": "Superior",
+      "level": "70",
+      "might": "00660",
+      "location": "K:305 X:603 Y:525"
+    },
+    "Ed Wellington": {
+      "status": "active",
+      "joined": "2026-04-11",
+      "last_seen": "2026-04-20",
+      "rank": "Soldier",
+      "level": "1",
+      "might": "324,461",
+      "location": "K:305 X:624 Y:524"
+    },
+    "SalahTime": {
+      "status": "active",
+      "joined": "2026-04-11",
+      "last_seen": "2026-04-13",
+      "rank": "Superior",
+      "level": "33",
+      "might": "4,882,273",
+      "location": "K:305 X:615 Y:509"
+    },
+    "Nakor": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-20",
+      "rank": "Officer",
+      "level": "40",
+      "might": "10,394,601",
+      "location": "K:305 X:604 Y:528"
+    },
+    "Nettle": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-20",
+      "rank": "Officer",
+      "level": "45",
+      "might": "6,860,690",
+      "location": "K:305 X:605 Y:529"
+    },
+    "NurSo": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-13",
+      "rank": "Veteran",
+      "level": "73",
+      "might": "275,631",
+      "location": "K:305 X:608 Y:532"
+    },
+    "Kathrilis": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-20",
+      "rank": "Soldier",
+      "level": "3",
+      "location": "K:305 X:608 Y:522"
+    },
+    "Jon Snow": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-14",
+      "rank": "Soldier",
+      "level": "73",
+      "might": "3,883,850",
+      "location": "K:305 X:608 Y:528"
+    },
+    "Lil Thog of Boomtown": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-20",
+      "rank": "Soldier",
+      "level": "49",
+      "might": "897,491",
+      "location": "K:305 X:623 Y:525"
+    },
+    "Red Hot": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-20",
+      "rank": "Soldier",
+      "level": "1",
+      "might": "925,974",
+      "location": "K:305 X:609 Y:525"
+    },
+    "Filloten": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-14",
+      "rank": "Soldier",
+      "level": "9",
+      "might": "2,690,514",
+      "location": "K:305 X:607 Y:525"
+    },
+    "Stuff": {
+      "status": "active",
+      "joined": "2026-04-11",
+      "last_seen": "2026-04-14",
+      "rank": "Soldier",
+      "level": "5",
+      "might": "325,221",
+      "location": "K:305 X:606 Y:530"
+    },
+    "Tygohn": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-20",
+      "rank": "Soldier",
+      "level": "29",
+      "might": "5,384,446",
+      "location": "K:305 X:606 Y:550"
+    },
+    "Moraron": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-13",
+      "rank": "Soldier",
+      "level": "35",
+      "location": "K:305 X:603 Y:545"
+    },
+    "Yondu": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-13",
+      "rank": "Soldier",
+      "level": "9",
+      "might": "10,394,601",
+      "location": "K:305 X:605 Y:527"
+    },
+    "BORU": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-14",
+      "rank": "Soldier",
+      "level": "8",
+      "might": "656,960",
+      "location": "K:305 X:623 Y:521"
+    },
+    "Burgs": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-20",
+      "rank": "Soldier",
+      "level": "2",
+      "might": "692,739",
+      "location": "K:305 X:618 Y:550"
+    },
+    "Comand": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-14",
+      "rank": "Soldier",
+      "level": "44",
+      "might": "674,711",
+      "location": "K:305 X:621 Y:513"
+    },
+    "Eyvening": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-20",
+      "rank": "Soldier",
+      "level": "34",
+      "might": "656,960",
+      "location": "K:305 X:619 Y:519"
+    },
+    "Funving": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-20",
+      "rank": "Soldier",
+      "level": "3",
+      "might": "782,923",
+      "location": "K:305 X:610 Y:548"
+    },
+    "Ironside": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-20",
+      "rank": "Soldier",
+      "level": "91",
+      "might": "489,470",
+      "location": "K:305 X:611 Y:545"
+    },
+    "Felkhabor": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-13",
+      "rank": "Soldier",
+      "level": "6",
+      "location": "K:305 X:680 Y:474"
+    },
+    "Luchfirilas": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-20",
+      "rank": "Soldier",
+      "level": "9",
+      "location": "K:305 X:609 Y:527"
+    },
+    "Mainmtar": {
+      "status": "removed",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-13",
+      "rank": "Soldier",
+      "level": "7",
+      "removed": "2026-04-14"
+    },
+    "Kaachou": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-14",
+      "rank": "Soldier",
+      "level": "17",
+      "might": "170,845",
+      "location": "K:305 X:603 Y:527"
+    },
+    "Elaref": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-20",
+      "rank": "Soldier",
+      "level": "31",
+      "might": "297,491",
+      "location": "K:305 X:620 Y:524"
+    },
+    "Earar": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-20",
+      "rank": "Soldier",
+      "level": "22",
+      "location": "K:305 X:609 Y:519"
+    },
+    "Fain": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-20",
+      "rank": "Soldier",
+      "location": "K:305 X:608 Y:546"
+    },
+    "Gabriel": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-20",
+      "rank": "Soldier",
+      "location": "K:305 X:613 Y:523",
+      "level": "13",
+      "might": "173,664"
+    },
+    "Hunter": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-20",
+      "rank": "Soldier",
+      "level": "58",
+      "location": "K:305 X:620 Y:512"
+    },
+    "Osvajac666": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-14",
+      "rank": "Soldier",
+      "level": "3",
+      "location": "K:305 X:605 Y:525"
+    },
+    "ROD": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-13",
+      "rank": "Soldier",
+      "level": "5",
+      "might": "585,057",
+      "location": "K:305 X:624 Y:526"
+    },
+    "Pfunk": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-14",
+      "rank": "Soldier",
+      "location": "K:305 X:606 Y:526",
+      "level": "3"
+    },
+    "Purefont": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-14",
+      "rank": "Soldier",
+      "level": "72",
+      "location": "K:305 X:617 Y:549"
+    },
+    "Totaur": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-20",
+      "rank": "Soldier",
+      "level": "16",
+      "location": "K:305 X:605 Y:531"
+    },
+    "Tygoran": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-14",
+      "rank": "Soldier",
+      "level": "3",
+      "location": "K:305 X:120 Y:354",
+      "might": "140,727"
+    },
+    "Vasfris": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-14",
+      "rank": "Soldier",
+      "location": "K:305 X:610 Y:530",
+      "level": "7"
+    },
+    "World Order": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-20",
+      "rank": "Soldier",
+      "level": "9",
+      "location": "K:305 X:607 Y:541",
+      "might": "215,493"
+    },
+    "ARBA33": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-14",
+      "rank": "Soldier",
+      "level": "73",
+      "location": "K:305 X:621 Y:521",
+      "might": "397,365"
+    },
+    "Agagas": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-20",
+      "rank": "Soldier",
+      "location": "K:305 X:944 Y:726",
+      "level": "9"
+    },
+    "Arardin": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-13",
+      "rank": "Soldier",
+      "level": "05",
+      "location": "K:305 X:601 Y:555"
+    },
+    "CarpeVino": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-14",
+      "rank": "Soldier",
+      "level": "33",
+      "location": "K:305 X:619 Y:511",
+      "might": "325,113"
+    },
+    "Colis": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-20",
+      "rank": "Soldier",
+      "location": "K:305 X:606 Y:546",
+      "level": "17"
+    },
+    "DON": {
+      "status": "removed",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-13",
+      "rank": "Soldier",
+      "level": "28",
+      "removed": "2026-04-14"
+    },
+    "Earfirilas": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-20",
+      "rank": "Soldier",
+      "level": "4",
+      "location": "K:305 X:620 Y:526"
+    },
+    "Elrafin": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-13",
+      "rank": "Soldier",
+      "level": "7",
+      "location": "K:305 X:608 Y:550"
+    },
+    "Eyareyl": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-14",
+      "rank": "Soldier",
+      "level": "58",
+      "might": "202,857",
+      "location": "K:305 X:602 Y:520"
+    },
+    "Lanien": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-20",
+      "rank": "Soldier",
+      "level": "16",
+      "location": "K:305 X:685 Y:177"
+    },
+    "AES": {
+      "status": "removed",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-13",
+      "level": "29",
+      "rank": "Soldier",
+      "location": "K:305 X:624 Y:524",
+      "removed": "2026-04-14"
+    },
+    "wy www": {
+      "status": "removed",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-13",
+      "level": "9",
+      "rank": "Soldier",
+      "removed": "2026-04-14"
+    },
+    "VU/errernartr ar": {
+      "status": "removed",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-13",
+      "level": "73",
+      "removed": "2026-04-14"
+    },
+    "Miintar /H.-2nc Y.6N0 Y.cI70": {
+      "status": "removed",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-13",
+      "level": "7",
+      "removed": "2026-04-14"
+    },
+    "Gozahn": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-20",
+      "level": "24",
+      "rank": "Soldier",
+      "location": "K:305 X:623 Y:527"
+    },
+    "wiiikaaaa": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-20",
+      "level": "3",
+      "rank": "Soldier",
+      "location": "K:305 X:610 Y:538"
+    },
+    "crabb": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-20",
+      "level": "27",
+      "rank": "Soldier",
+      "location": "K:305 X:608 Y:526",
+      "might": "269,187"
+    },
+    "lronsinger": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-14",
+      "level": "7",
+      "rank": "Soldier",
+      "location": "K:305 X:484 Y:552"
+    },
+    "Ruin": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-14",
+      "rank": "Soldier",
+      "location": "K:305 X:614 Y:522",
+      "level": "13"
+    },
+    "Orodbrimir": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-20",
+      "rank": "Soldier",
+      "location": "K:305 X:602 Y:528",
+      "might": "127,005",
+      "level": "45"
+    },
+    "Fobor": {
+      "status": "active",
+      "joined": "2026-04-13",
+      "last_seen": "2026-04-14",
+      "level": "72",
+      "rank": "Soldier",
+      "location": "K:305 X:612 Y:550"
+    },
+    "HOT": {
+      "status": "removed",
+      "joined": "2026-04-14",
+      "last_seen": "2026-04-14",
+      "level": "29",
+      "rank": "Soldier",
+      "removed": "2026-04-14"
+    },
+    "Iris": {
+      "status": "removed",
+      "joined": "2026-04-14",
+      "last_seen": "2026-04-14",
+      "level": "15",
+      "removed": "2026-04-14"
+    },
+    "Der Morg": {
+      "status": "active",
+      "joined": "2026-04-14",
+      "last_seen": "2026-04-14",
+      "level": "7",
+      "rank": "Soldier",
+      "location": "K:305 X:147 Y:353"
+    },
+    "Mnrarnn (/.205 YYY-6492 Y-RAG": {
+      "status": "removed",
+      "joined": "2026-04-14",
+      "last_seen": "2026-04-14",
+      "level": "5",
+      "removed": "2026-04-14"
+    },
+    "Amr ibn al Aas": {
+      "status": "active",
+      "joined": "2026-04-14",
+      "last_seen": "2026-04-14",
+      "level": "2",
+      "rank": "Soldier",
+      "location": "K:305 X:629 Y:511",
+      "might": "641,438"
+    },
+    "Peregrine Falcon": {
+      "status": "active",
+      "joined": "2026-04-14",
+      "last_seen": "2026-04-14",
+      "level": "8",
+      "rank": "Soldier",
+      "location": "K:305 X:603 Y:525"
+    },
+    "Trdat": {
+      "status": "active",
+      "joined": "2026-04-14",
+      "last_seen": "2026-04-20",
+      "level": "79",
+      "rank": "Soldier",
+      "location": "K:305 X:609 Y:545"
+    },
+    "Van Jazzle": {
+      "status": "active",
+      "joined": "2026-04-14",
+      "last_seen": "2026-04-20",
+      "level": "15",
+      "rank": "Soldier",
+      "location": "K:305 X:609 Y:531"
+    },
+    "Maedrafir": {
+      "status": "active",
+      "joined": "2026-04-14",
+      "last_seen": "2026-04-20",
+      "level": "5",
+      "rank": "Soldier",
+      "location": "K:305 X:609 Y:541"
+    },
+    "Celmeena": {
+      "status": "active",
+      "joined": "2026-04-14",
+      "last_seen": "2026-04-20",
+      "rank": "Soldier",
+      "location": "K:305 X:603 Y:529",
+      "level": "33"
+    },
+    "Rayan": {
+      "status": "active",
+      "joined": "2026-04-14",
+      "last_seen": "2026-04-20",
+      "rank": "Soldier",
+      "location": "K:305 X:611 Y:543",
+      "level": "3"
+    },
+    "Areda": {
+      "status": "active",
+      "joined": "2026-04-14",
+      "last_seen": "2026-04-20",
+      "level": "92",
+      "rank": "Soldier",
+      "location": "K:305 X:605 Y:541"
+    },
+    "Jennifer": {
+      "status": "active",
+      "joined": "2026-04-14",
+      "last_seen": "2026-04-20",
+      "level": "3",
+      "rank": "Soldier",
+      "location": "K:305 X:606 Y:532"
+    },
+    "Was1m: 37S ago": {
+      "status": "active",
+      "joined": "2026-04-20",
+      "last_seen": "2026-04-20",
+      "level": "65"
+    },
+    "Ce:r:ff": {
+      "status": "active",
+      "joined": "2026-04-20",
+      "last_seen": "2026-04-20"
+    },
+    "Comand KGH": {
+      "status": "active",
+      "joined": "2026-04-20",
+      "last_seen": "2026-04-20",
+      "level": "32",
+      "rank": "Soldier",
+      "location": "K:305 X:621 Y:513"
+    },
+    "Rhys": {
+      "status": "active",
+      "joined": "2026-04-20",
+      "last_seen": "2026-04-20",
+      "level": "9",
+      "rank": "Soldier",
+      "location": "K:305 X:625 Y:525"
+    },
+    "CENGIZHAN": {
+      "status": "active",
+      "joined": "2026-04-20",
+      "last_seen": "2026-04-20",
+      "level": "3",
+      "rank": "Soldier",
+      "location": "K:305 X:617 Y:549",
+      "might": "1,011,639"
+    },
+    "Lirosin": {
+      "status": "active",
+      "joined": "2026-04-20",
+      "last_seen": "2026-04-20",
+      "level": "5",
+      "rank": "Soldier",
+      "location": "K:305 X:607 Y:527"
+    },
+    "basket ball": {
+      "status": "active",
+      "joined": "2026-04-20",
+      "last_seen": "2026-04-20",
+      "level": "5",
+      "rank": "Soldier",
+      "location": "K:305 X:602 Y:520",
+      "might": "465,984"
+    },
+    "Mohamed": {
+      "status": "active",
+      "joined": "2026-04-20",
+      "last_seen": "2026-04-20",
+      "level": "33",
+      "rank": "Soldier",
+      "location": "K:305 X:603 Y:541"
+    },
+    "Morn": {
+      "status": "active",
+      "joined": "2026-04-20",
+      "last_seen": "2026-04-20",
+      "level": "7",
+      "rank": "Soldier",
+      "location": "K:305 X:692 Y:116"
+    },
+    "Mario": {
+      "status": "active",
+      "joined": "2026-04-20",
+      "last_seen": "2026-04-20",
+      "level": "4",
+      "rank": "Soldier",
+      "location": "K:305 X:607 Y:545"
+    },
+    "Ferodad": {
+      "status": "active",
+      "joined": "2026-04-20",
+      "last_seen": "2026-04-20",
+      "level": "1",
+      "rank": "Soldier",
+      "location": "K:305 X:582 Y:532"
+    },
+    "Clitchad (K-205 Y-6NR Y-574": {
+      "status": "active",
+      "joined": "2026-04-20",
+      "last_seen": "2026-04-20",
+      "level": "3"
+    },
+    "Clitchad (K-205 Y-60R Y-574": {
+      "status": "active",
+      "joined": "2026-04-20",
+      "last_seen": "2026-04-20",
+      "level": "3"
+    }
+  },
+  "saved": "2026-04-20T17:50:43.010432"
+}

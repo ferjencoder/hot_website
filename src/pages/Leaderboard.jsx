@@ -19,13 +19,13 @@ export default function Leaderboard() {
   )
 
   if (error || !currentWeek) return (
-    <div style={{ padding: 40, textAlign: 'center' }}>
-      <div style={{ fontSize: 32, marginBottom: 12 }}>⚠️</div>
-      <p style={{ color: 'var(--text-muted)', fontSize: 14 }}>
-        {error
-          ? `Could not load chest data: ${error}`
-          : 'No chest data yet — run Sync from the HOT Clan app.'
-        }
+    <div style={{ padding: 60, textAlign: 'center' }}>
+      <div style={{ fontSize: 48, marginBottom: 16 }}>📊</div>
+      <h2 style={{ fontSize: 18, marginBottom: 8 }}>No chest data yet</h2>
+      <p style={{ color: 'var(--text-muted)', fontSize: 14, lineHeight: 1.7, maxWidth: 280, margin: '0 auto' }}>
+        Open the HOT Clan Tool app and click<br/>
+        <strong style={{ color: 'var(--primary-dark)' }}>🌐 Sync to Website</strong><br/>
+        to publish this week's chest data.
       </p>
     </div>
   )

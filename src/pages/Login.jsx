@@ -41,17 +41,11 @@ export default function Login() {
 
         {/* Logo */}
         <div style={{ textAlign: 'center', marginBottom: 28 }}>
-          <div style={{
-            width: 60, height: 60, borderRadius: 18,
-            background: 'var(--primary)',
-            margin: '0 auto 16px',
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-            boxShadow: '0 8px 24px rgba(245,158,11,0.35)',
-          }}>
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#000" strokeWidth="2.5" strokeLinecap="round">
-              <path d="M12 2L3 7v5c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V7L12 2z"/>
-            </svg>
-          </div>
+          <img
+            src="https://res.cloudinary.com/ferjen/image/upload/q_auto/f_auto/v1776433276/TB/logo/HOT_HookedOnTB.png"
+            alt="HOT Clan"
+            style={{ width: 80, height: 80, objectFit: 'contain', margin: '0 auto 16px', display: 'block' }}
+          />
           <h1 style={{ fontSize: 26, fontFamily: 'Outfit, sans-serif', fontWeight: 700, color: 'var(--text)', marginBottom: 4 }}>
             HOT Clan
           </h1>
