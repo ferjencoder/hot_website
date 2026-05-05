@@ -190,11 +190,11 @@
     "Ironside": {
       "status": "active",
       "joined": "2026-04-13",
-      "last_seen": "2026-04-20",
-      "rank": "Soldier",
-      "level": "91",
+      "last_seen": "2026-04-29",
+      "rank": "Officer",
+      "level": "168",
       "might": "489,470",
-      "location": "K:305 X:611 Y:545"
+      "location": "K:231 X:301 Y:317"
     },
     "Felkhabor": {
       "status": "active",
@@ -232,11 +232,11 @@
     "Elaref": {
       "status": "active",
       "joined": "2026-04-13",
-      "last_seen": "2026-04-20",
+      "last_seen": "2026-04-30",
       "rank": "Soldier",
-      "level": "31",
-      "might": "297,491",
-      "location": "K:305 X:620 Y:524"
+      "level": "54",
+      "might": "32,661",
+      "location": "K:305 X:238 Y:498"
     },
     "Earar": {
       "status": "active",
@@ -495,11 +495,11 @@
     "Orodbrimir": {
       "status": "active",
       "joined": "2026-04-13",
-      "last_seen": "2026-04-20",
+      "last_seen": "2026-04-30",
       "rank": "Soldier",
-      "location": "K:305 X:602 Y:528",
+      "location": "K:305 X:792 Y:574",
       "might": "127,005",
-      "level": "45"
+      "level": "2"
     },
     "Fobor": {
       "status": "active",
@@ -651,10 +651,10 @@
     "Lirosin": {
       "status": "active",
       "joined": "2026-04-20",
-      "last_seen": "2026-04-20",
-      "level": "5",
+      "last_seen": "2026-04-30",
+      "level": "10",
       "rank": "Soldier",
-      "location": "K:305 X:607 Y:527"
+      "location": "K:305 X:434 Y:362"
     },
     "basket ball": {
       "status": "active",
@@ -708,7 +708,940 @@
       "joined": "2026-04-20",
       "last_seen": "2026-04-20",
       "level": "3"
+    },
+    "BOOM": {
+      "status": "active",
+      "joined": "2026-04-29",
+      "last_seen": "2026-04-29",
+      "level": "93",
+      "rank": "Leader",
+      "location": "K:231 X:298 Y:352"
+    },
+    "KayBrielle": {
+      "status": "active",
+      "joined": "2026-04-29",
+      "last_seen": "2026-04-29",
+      "level": "7",
+      "rank": "Superior",
+      "location": "K:231 X:298 Y:358"
+    },
+    "Gem Quadtoo": {
+      "status": "active",
+      "joined": "2026-04-29",
+      "last_seen": "2026-04-29",
+      "level": "32",
+      "rank": "Soldier",
+      "location": "K:231 X:308 Y:364"
+    },
+    "ell dt": {
+      "status": "active",
+      "joined": "2026-04-29",
+      "last_seen": "2026-04-29",
+      "rank": "Soldier"
+    },
+    "Enaning": {
+      "status": "active",
+      "joined": "2026-04-29",
+      "last_seen": "2026-04-29",
+      "rank": "Soldier",
+      "location": "K:231 X:302 Y:354"
+    },
+    "Hailey": {
+      "status": "active",
+      "joined": "2026-04-29",
+      "last_seen": "2026-04-29",
+      "level": "5",
+      "rank": "Soldier",
+      "location": "K:231 X:300 Y:346"
+    },
+    "Ceretius": {
+      "status": "active",
+      "joined": "2026-04-29",
+      "last_seen": "2026-04-29",
+      "level": "88",
+      "rank": "Soldier",
+      "location": "K:231 X:303 Y:359"
+    },
+    "irerenarnt Sh": {
+      "status": "active",
+      "joined": "2026-04-29",
+      "last_seen": "2026-04-29",
+      "level": "92",
+      "might": "36,833,596"
+    },
+    "Lordisen": {
+      "status": "active",
+      "joined": "2026-04-29",
+      "last_seen": "2026-04-29",
+      "level": "6",
+      "rank": "Soldier",
+      "location": "K:231 X:292 Y:376"
+    },
+    "Zar Lanier": {
+      "status": "active",
+      "joined": "2026-04-29",
+      "last_seen": "2026-04-29",
+      "rank": "Soldier",
+      "location": "K:231 X:304 Y:350"
+    },
+    "PEDRO": {
+      "status": "active",
+      "joined": "2026-04-29",
+      "last_seen": "2026-04-29",
+      "level": "4",
+      "rank": "Soldier",
+      "location": "K:231 X:289 Y:349"
+    },
+    "Serlotilas": {
+      "status": "active",
+      "joined": "2026-04-29",
+      "last_seen": "2026-04-29",
+      "level": "4",
+      "rank": "Soldier",
+      "location": "K:231 X:299 Y:355"
+    },
+    "Rahai": {
+      "status": "active",
+      "joined": "2026-04-29",
+      "last_seen": "2026-04-29",
+      "level": "67",
+      "might": "20,077,861"
+    },
+    "ARGENTIUM": {
+      "status": "active",
+      "joined": "2026-04-29",
+      "last_seen": "2026-04-29",
+      "level": "7",
+      "rank": "Soldier",
+      "location": "K:231 X:297 Y:325"
+    },
+    "daDep": {
+      "status": "active",
+      "joined": "2026-04-29",
+      "last_seen": "2026-04-29",
+      "rank": "Soldier",
+      "location": "K:231 X:291 Y:319"
+    },
+    "Walechinski": {
+      "status": "active",
+      "joined": "2026-04-29",
+      "last_seen": "2026-04-29",
+      "rank": "Soldier",
+      "location": "K:231 X:292 Y:334"
+    },
+    "Nuccio 1": {
+      "status": "active",
+      "joined": "2026-04-29",
+      "last_seen": "2026-04-29",
+      "level": "76",
+      "rank": "Soldier",
+      "location": "K:231 X:306 Y:348"
+    },
+    "Cabal Atpi": {
+      "status": "active",
+      "joined": "2026-04-29",
+      "last_seen": "2026-04-29",
+      "rank": "Soldier",
+      "location": "K:231 X:303 Y:355"
+    },
+    "txotxi": {
+      "status": "active",
+      "joined": "2026-04-29",
+      "last_seen": "2026-04-29",
+      "level": "2",
+      "rank": "Soldier",
+      "location": "K:231 X:305 Y:371"
+    },
+    "Burus": {
+      "status": "active",
+      "joined": "2026-04-29",
+      "last_seen": "2026-04-29",
+      "level": "5",
+      "rank": "Soldier",
+      "location": "K:231 X:619 Y:91"
+    },
+    "Gokus": {
+      "status": "active",
+      "joined": "2026-04-29",
+      "last_seen": "2026-04-29",
+      "level": "38",
+      "rank": "Soldier",
+      "location": "K:231 X:186 Y:232"
+    },
+    "Stefan De Wet": {
+      "status": "active",
+      "joined": "2026-04-29",
+      "last_seen": "2026-04-29",
+      "level": "7",
+      "rank": "Soldier"
+    },
+    "Dunos": {
+      "status": "active",
+      "joined": "2026-04-29",
+      "last_seen": "2026-04-29",
+      "level": "45",
+      "rank": "Soldier",
+      "location": "K:231 X:287 Y:373"
+    },
+    "Aeglinef": {
+      "status": "active",
+      "joined": "2026-04-29",
+      "last_seen": "2026-04-29",
+      "level": "7",
+      "rank": "Soldier",
+      "location": "K:231 X:299 Y:367"
+    },
+    "Narin": {
+      "status": "active",
+      "joined": "2026-04-29",
+      "last_seen": "2026-04-29",
+      "rank": "Soldier",
+      "location": "K:231 X:499 Y:223"
+    },
+    "beoeulf": {
+      "status": "active",
+      "joined": "2026-04-29",
+      "last_seen": "2026-04-29",
+      "level": "41",
+      "rank": "Soldier",
+      "location": "K:231 X:807 Y:687"
+    },
+    "Ness": {
+      "status": "active",
+      "joined": "2026-04-29",
+      "last_seen": "2026-04-29",
+      "level": "6",
+      "rank": "Soldier",
+      "location": "K:231 X:302 Y:356"
+    },
+    "bryce": {
+      "status": "active",
+      "joined": "2026-04-29",
+      "last_seen": "2026-04-29",
+      "level": "4",
+      "rank": "Soldier",
+      "location": "K:231 X:303 Y:353"
+    },
+    "Thogas": {
+      "status": "active",
+      "joined": "2026-04-29",
+      "last_seen": "2026-04-29",
+      "level": "75",
+      "rank": "Soldier",
+      "location": "K:231 X:298 Y:346"
+    },
+    "ordvar": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "10",
+      "rank": "Leader",
+      "location": "K:305 X:437 Y:359",
+      "might": "105,343"
+    },
+    "akazahn": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "10",
+      "rank": "Officer",
+      "location": "K:305 X:435 Y:359"
+    },
+    "as 2 days ago": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "7",
+      "rank": "Soldier",
+      "location": "K:305 X:439 Y:361"
+    },
+    "zanara": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "rank": "Soldier",
+      "location": "K:305 X:436 Y:358"
+    },
+    "as 7h:15 mago": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "7"
+    },
+    "almerim": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "rank": "Soldier",
+      "location": "K:305 X:441 Y:362",
+      "might": "45,664",
+      "level": "10"
+    },
+    "irvenel": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "rank": "Soldier",
+      "location": "K:305 X:549 Y:217",
+      "might": "45,664"
+    },
+    "as 10 days ago": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "7",
+      "rank": "Soldier",
+      "location": "K:305 X:237 Y:501"
+    },
+    "anise": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "5",
+      "rank": "Soldier",
+      "location": "K:305 X:437 Y:357"
+    },
+    "as 3h:18 mago": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "8",
+      "rank": "Soldier",
+      "location": "K:305 X:512 Y:192"
+    },
+    "ogrel": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "7",
+      "rank": "Soldier",
+      "location": "K:305 X:434 Y:360"
+    },
+    "orningStar": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "rank": "Soldier",
+      "location": "K:305 X:434 Y:358"
+    },
+    "ymuro": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "rank": "Soldier",
+      "location": "K:305 X:438 Y:356"
+    },
+    "nrirr": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "rank": "Soldier",
+      "location": "K:305 X:315 Y:607",
+      "might": "2,650"
+    },
+    "as 6h: 50m ago": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "5",
+      "might": "18,574"
+    },
+    "as6h:8 mago": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "rank": "Soldier",
+      "location": "K:305 X:436 Y:360"
+    },
+    "srinlf": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "rank": "Soldier",
+      "location": "K:305 X:251 Y:857",
+      "might": "18,029"
+    },
+    "liegin": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "rank": "Soldier",
+      "location": "K:305 X:268 Y:122",
+      "might": "14,437"
+    },
+    "igami": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "rank": "Soldier",
+      "location": "K:305 X:439 Y:3",
+      "might": "11,675"
+    },
+    "agiY": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "6"
+    },
+    "onwind": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "rank": "Soldier",
+      "location": "K:305 X:443 Y:359"
+    },
+    "ujind": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "97",
+      "rank": "Soldier",
+      "location": "K:305 X:436 Y:356"
+    },
+    "inmisis": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "53",
+      "rank": "Soldier",
+      "location": "K:305 X:711 Y:681",
+      "might": "238,793"
+    },
+    "iM: 21M ago": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "12"
+    },
+    "rsmelt": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "34",
+      "rank": "Soldier",
+      "location": "K:305 X:435 Y:355"
+    },
+    "as 2h: 28 mago": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "1",
+      "rank": "Soldier",
+      "location": "K:305 X:440 Y:356"
+    },
+    "asih:10m ago": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "7",
+      "rank": "Soldier",
+      "location": "K:305 X:617 Y:147"
+    },
+    "sramar": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "rank": "Soldier",
+      "location": "K:305 X:437 Y:363"
+    },
+    "aladred": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "11",
+      "rank": "Soldier",
+      "location": "K:305 X:603 Y:173"
+    },
+    "arth Severus": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "9",
+      "rank": "Soldier",
+      "location": "K:305 X:437 Y:355"
+    },
+    "as 4h: 58 mago": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "9"
+    },
+    "igieTech": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "rank": "Soldier",
+      "location": "K:305 X:436 Y:362"
+    },
+    "as 3davs ago": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "rank": "Soldier",
+      "location": "K:305 X:238 Y:498"
+    },
+    "iladinKnight": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "3",
+      "rank": "Soldier",
+      "location": "K:305 X:214 Y:720"
+    },
+    "Dilad": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "10",
+      "rank": "Soldier",
+      "location": "K:305 X:439 Y:361"
+    },
+    "Beanara": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "10",
+      "rank": "Veteran",
+      "location": "K:305 X:436 Y:358"
+    },
+    "denise": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "3",
+      "rank": "Soldier",
+      "location": "K:305 X:437 Y:357"
+    },
+    "Redforge": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "7",
+      "rank": "Soldier",
+      "location": "K:305 X:439 Y:359"
+    },
+    "Finros": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "2",
+      "rank": "Soldier",
+      "location": "K:305 X:512 Y:192"
+    },
+    "Agath": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "4",
+      "rank": "Soldier",
+      "location": "K:305 X:237 Y:501"
+    },
+    "Tomuro": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "rank": "Soldier",
+      "location": "K:305 X:438 Y:356",
+      "might": "2,650"
+    },
+    "Tobur": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "2",
+      "rank": "Soldier",
+      "location": "K:305 X:436 Y:360",
+      "might": "18,574"
+    },
+    "Kerinlf": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "rank": "Soldier",
+      "location": "K:305 X:251 Y:857"
+    },
+    "Fallegin": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "rank": "Soldier",
+      "location": "K:305 X:268 Y:122"
+    },
+    "Tugami": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "rank": "Soldier",
+      "location": "K:305 X:439 Y:357",
+      "might": "14,437"
+    },
+    "Serien": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "5",
+      "rank": "Soldier",
+      "location": "K:305 X:435 Y:361"
+    },
+    "Fatih": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "14",
+      "rank": "Soldier",
+      "location": "K:305 X:433 Y:357"
+    },
+    "Gojin": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "11",
+      "rank": "Soldier",
+      "location": "K:305 X:438 Y:358"
+    },
+    "VRIne": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "12"
+    },
+    "Jasna": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "rank": "Soldier",
+      "location": "K:305 X:442 Y:360",
+      "level": "12"
+    },
+    "Rady": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "34",
+      "rank": "Soldier",
+      "location": "K:305 X:440 Y:356"
+    },
+    "Thomas di Odino": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "rank": "Soldier",
+      "location": "K:305 X:617 Y:147"
+    },
+    "Teramar": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "rank": "Soldier",
+      "location": "K:305 X:437 Y:363"
+    },
+    "pee Dell": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30"
+    },
+    "Filkayen": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "rank": "Soldier",
+      "location": "K:305 X:565 Y:233"
+    },
+    "Morr": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "rank": "Soldier",
+      "location": "K:305 X:432 Y:358"
+    },
+    "Tanos": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "rank": "Soldier",
+      "location": "K:305 X:433 Y:359"
+    },
+    "Say": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "11"
+    },
+    "Dvali": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "rank": "Soldier",
+      "location": "K:305 X:346 Y:828"
+    },
+    "ee) Wels YOSLEM Gay": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "12"
+    },
+    "ar iete Rady": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "rank": "Soldier",
+      "location": "K:305 X:440 Y:356"
+    },
+    "Turgolod": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "rank": "Soldier",
+      "location": "K:305 X:435 Y:363"
+    },
+    "Araran": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "rank": "Soldier",
+      "location": "K:305 X:440 Y:360"
+    },
+    "aie) Was 1h: 27 mago": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "10"
+    },
+    "bf Was 10 days ago": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "10"
+    },
+    "nor - Dell": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30"
+    },
+    "AES IMF AR SOME": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30"
+    },
+    "\u201cWhere": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "12"
+    },
+    "eae) Was 10 days ago": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "10"
+    },
+    "fEys Nordvar": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "10",
+      "rank": "Leader",
+      "location": "K:305 X:437 Y:359",
+      "might": "105,343"
+    },
+    "aete Kakazahn": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "rank": "Officer",
+      "location": "K:305 X:435 Y:359"
+    },
+    "Eaten Dilad": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "10",
+      "rank": "Soldier",
+      "location": "K:305 X:439 Y:361"
+    },
+    "SFaetecy Beanara": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "4",
+      "rank": "Veteran",
+      "location": "K:305 X:436 Y:358"
+    },
+    "aece Nalmerim": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "10",
+      "rank": "Soldier",
+      "location": "K:305 X:441 Y:361"
+    },
+    "Spee X Larvenel": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "rank": "Soldier",
+      "location": "K:305 X:549 Y:217"
+    },
+    "Seastce Redforge": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "7",
+      "rank": "Soldier",
+      "location": "K:305 X:439 Y:359"
+    },
+    "Saeatee Finros": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "2",
+      "rank": "Soldier",
+      "location": "K:305 X:512 Y:192"
+    },
+    "Spetey Agath": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "4",
+      "rank": "Soldier",
+      "location": "K:305 X:237 Y:501"
+    },
+    "SEW Tobur": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "7",
+      "rank": "Soldier",
+      "location": "K:305 X:436 Y:360"
+    },
+    "Beaten Filkayen": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "2",
+      "rank": "Soldier",
+      "location": "K:305 X:565 Y:233"
+    },
+    "K:305 X:439 Y:357": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "rank": "Soldier",
+      "location": "K:305 X:439 Y:357",
+      "might": "14,437"
+    },
+    "pS Online": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "rank": "Soldier",
+      "location": "K:305 X:435 Y:361"
+    },
+    "SM) online": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "5"
+    },
+    "i aPaey Tanmisis": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "12",
+      "rank": "Soldier",
+      "location": "K:305 X:711 Y:681"
+    },
+    "EGER Tanos": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "5",
+      "rank": "Soldier",
+      "location": "K:305 X:433 Y:359"
+    },
+    "ALY Gojin": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "11",
+      "rank": "Soldier",
+      "location": "K:305 X:438 Y:358"
+    },
+    "Pa Dvali": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "2",
+      "rank": "Soldier",
+      "location": "K:305 X:346 Y:828"
+    },
+    "Delis YOslerday": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "12"
+    },
+    "CFaeeee Jersmelt": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "34",
+      "rank": "Soldier",
+      "location": "K:305 X:435 Y:355"
+    },
+    "eee EAM Jasna": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "2",
+      "rank": "Soldier",
+      "location": "K:305 X:442 Y:360"
+    },
+    "Ba aad Rady": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "rank": "Soldier",
+      "location": "K:305 X:440 Y:356"
+    },
+    "Saece Teramar": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "rank": "Soldier",
+      "location": "K:305 X:437 Y:36",
+      "might": "52,929"
+    },
+    "K:305 X:239 Y:493": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "rank": "Soldier",
+      "location": "K:305 X:239 Y:493"
+    },
+    "peateey Turgolod": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "rank": "Soldier",
+      "location": "K:305 X:435 Y:363"
+    },
+    "Saeed Lirosin": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "10",
+      "rank": "Soldier",
+      "location": "K:305 X:434 Y:362"
+    },
+    "me ees Was h:17mago": {
+      "status": "active",
+      "joined": "2026-04-30",
+      "last_seen": "2026-04-30",
+      "level": "3",
+      "rank": "Soldier",
+      "location": "K:305 X:214 Y:720"
     }
   },
-  "saved": "2026-04-20T17:50:43.010432"
+  "saved": "2026-04-30T13:47:28.369318"
 }

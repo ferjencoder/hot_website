@@ -37,8 +37,7 @@ const TIMEZONES = [
   { label: '🇸🇬 Singapore / Malaysia',    tz: 'Asia/Singapore' },
   { label: '🇦🇺 Australia (Sydney)',       tz: 'Australia/Sydney' },
   { label: '🇧🇷 Brazil',                  tz: 'America/Sao_Paulo' },
-  { label: '🇦🇷 Argentina',               tz: 'America/Argentina/Buenos_Aires' },
-  { label: '🇦🇷 Argentina',               tz: 'America/Argentina/Buenos_Aires' },
+  { label: '🇦🇷 Argentina',               tz: 'America/Argentina/Buenos_Aires' },  // ← duplicate removed
   { label: '🇺🇸 US Eastern',              tz: 'America/New_York' },
   { label: '🇺🇸 US Central',              tz: 'America/Chicago' },
   { label: '🇺🇸 US Pacific',              tz: 'America/Los_Angeles' },
@@ -68,7 +67,6 @@ function formatInTz(utcHour, day, tz) {
 function getOffset(tz) {
   try {
     const now = new Date()
-    const utcMs = now.getTime()
     const local = new Date(now.toLocaleString('en-US', { timeZone: tz }))
     const utc   = new Date(now.toLocaleString('en-US', { timeZone: 'UTC' }))
     const diff  = (local - utc) / 3600000
@@ -182,7 +180,7 @@ export function Events() {
             </table>
           </div>
         ))}
-        
+
       </div>
     </div>
   )

@@ -38,7 +38,7 @@ export function useData() {
       fetch('/data/config.json').then(r => r.json()),
       fetch('/data/chest_scoring.json').then(r => r.json()),
       fetch('/data/HOT_Roster.json').then(r => r.json()).catch(() => ({ members: {} })),
-      fetch(`/data/gifts_${month}.csv`).then(r => r.text()).catch(() => ''),
+      fetch(`/data/chests_${month}.csv`).then(r => r.text()).catch(() => ''),  // ← FIXED: was gifts_
     ]).then(([config, scoringData, rosterJson, giftsCSV]) => {
       const roster = Object.entries(rosterJson.members || {})
         .filter(([, m]) => m.status === 'active')
