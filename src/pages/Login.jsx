@@ -1,45 +1,68 @@
-import { useState, useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { useAuth } from '../hooks/useAuth.jsx'
 import { useNavigate } from 'react-router-dom'
 
 export default function Login() {
-  const [members, setMembers] = useState([])
-  const [name, setName] = useState('')
-  const [pin, setPin] = useState('')
-  const [error, setError] = useState('')
-  const [config, setConfig] = useState(null)
+  const [members,    setMembers]    = useState([])
+  const [name,       setName]       = useState('')
+  const [pin,        setPin]        = useState('')
+  const [error,      setError]      = useState('')
+  const [loading,    setLoading]    = useState(true)
+  const [submitting, setSubmitting] = useState(false)
   const { login } = useAuth()
   const nav = useNavigate()
 
+  // Load member names for the dropdown (names only — no hashes)
   useEffect(() => {
-    fetch('/data/config.json').then(r => r.json()).then(c => {
-      setConfig(c)
-      setMembers(Object.keys(c.members).sort())
-    })
+    let alive = true
+    fetch('/.netlify/functions/get-members', { cache: 'no-store' })
+      .then(r => r.json())
+      .then(data => { if (alive) setMembers(data.names || []) })
+      .catch(err => {
+        console.error('[Login] get-members failed:', err)
+        if (alive) setError('Could not load member list. Contact leadership.')
+      })
+      .finally(() => { if (alive) setLoading(false) })
+    return () => { alive = false }
   }, [])
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
     setError('')
     if (!name) { setError('Please select your name'); return }
-    if (!config?.members[name]) { setError('Member not found'); return }
-    if (config.members[name] !== pin) { setError('Incorrect PIN — ask Chili Peppers if you forgot'); return }
-    login(name)
-    nav('/')
+    if (!pin)  { setError('Please enter your PIN');   return }
+
+    setSubmitting(true)
+    try {
+      const res  = await fetch('/.netlify/functions/login', {
+        method:  'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body:    JSON.stringify({ name, pin }),
+      })
+      const data = await res.json()
+
+      if (!res.ok) {
+        setError(data.error || 'Login failed. Ask Chili Peppers if you forgot your PIN.')
+        return
+      }
+
+      login(data.name, data.token)
+      nav('/', { replace: true })
+    } catch (err) {
+      console.error('[Login] submit error:', err)
+      setError('Login failed — please check your connection.')
+    } finally {
+      setSubmitting(false)
+    }
   }
 
   return (
     <div style={{
-      minHeight: '100vh',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      background: 'var(--bg)',
-      padding: '24px 16px',
+      minHeight: '100vh', display: 'flex', alignItems: 'center',
+      justifyContent: 'center', background: 'var(--bg)', padding: '24px 16px',
     }}>
       <div style={{ width: '100%', maxWidth: 380 }}>
 
-        {/* Logo */}
         <div style={{ textAlign: 'center', marginBottom: 28 }}>
           <img
             src="https://res.cloudinary.com/ferjen/image/upload/q_auto/f_auto/v1776433276/TB/logo/HOT_HookedOnTB.png"
@@ -52,7 +75,6 @@ export default function Login() {
           <p style={{ color: 'var(--text-muted)', fontSize: 14 }}>Kingdom 305 · Member portal</p>
         </div>
 
-        {/* Card */}
         <div className="card" style={{ padding: 24 }}>
           <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
 
@@ -60,8 +82,9 @@ export default function Login() {
               <label style={{ display: 'block', fontSize: 12, fontWeight: 600, color: 'var(--text-dim)', marginBottom: 6 }}>
                 Your name
               </label>
-              <select value={name} onChange={e => { setName(e.target.value); setError('') }}>
-                <option value="">Select member...</option>
+              <select value={name} onChange={e => { setName(e.target.value); setError('') }}
+                disabled={loading || submitting}>
+                <option value="">{loading ? 'Loading members...' : 'Select member...'}</option>
                 {members.map(m => <option key={m} value={m}>{m}</option>)}
               </select>
             </div>
@@ -71,11 +94,10 @@ export default function Login() {
                 PIN
               </label>
               <input
-                type="password"
-                value={pin}
-                onChange={e => { setPin(e.target.value); setError('') }}
-                placeholder="Enter your PIN"
-                maxLength={8}
+                type="password" inputMode="numeric" autoComplete="current-password"
+                value={pin} onChange={e => { setPin(e.target.value.trim()); setError('') }}
+                placeholder="Enter your PIN" maxLength={12}
+                disabled={loading || submitting}
               />
             </div>
 
@@ -88,8 +110,10 @@ export default function Login() {
               </div>
             )}
 
-            <button type="submit" className="btn primary" style={{ justifyContent: 'center', padding: '12px 20px', marginTop: 4, fontSize: 15 }}>
-              Enter the clan
+            <button type="submit" className="btn primary"
+              disabled={loading || submitting}
+              style={{ justifyContent: 'center', padding: '12px 20px', marginTop: 4, fontSize: 15 }}>
+              {submitting ? 'Checking...' : 'Enter the clan'}
             </button>
           </form>
 
@@ -100,7 +124,6 @@ export default function Login() {
             </p>
           </div>
         </div>
-
       </div>
     </div>
   )

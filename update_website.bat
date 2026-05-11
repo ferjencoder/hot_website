@@ -2,7 +2,8 @@
 setlocal
 
 set TOOL=F:\FERJEN\01_PROJECTS\HOT01_HOT_Admin\apps\hot_chest_counter
-set SITE=F:\FERJEN\01_PROJECTS\HOT01_HOT_Admin\apps\hot_website\public\data
+set TRACKER=F:\FERJEN\01_PROJECTS\HOT01_HOT_Admin\HOT_K305_CLAN_TRACKER.xlsx
+set SITE=F:\FERJEN\01_PROJECTS\HOT01_HOT_Admin\apps\hot_website\private\data
 
 echo.
 echo === HOT Clan — updating website data ===
@@ -13,8 +14,16 @@ echo Copying HOT_Roster.json...
 copy /Y "%TOOL%\data\HOT_Roster.json" "%SITE%\HOT_Roster.json"
 if errorlevel 1 ( echo ERROR: could not copy roster & pause & exit /b 1 )
 
-REM Copy current month's gift CSV
-for /f "tokens=1-2 delims=/" %%a in ('wmic os get LocalDateTime /value ^| find "="') do set dt=%%b
+REM Copy Excel tracker
+echo Copying HOT_K305_CLAN_TRACKER.xlsx...
+if exist "%TRACKER%" (
+    copy /Y "%TRACKER%" "%SITE%\HOT_K305_CLAN_TRACKER.xlsx"
+) else (
+    echo WARNING: tracker not found at %TRACKER%, skipping
+)
+
+REM Copy current month's gift CSV (legacy — kept for reference)
+for /f "tokens=2 delims==" %%a in ('wmic os get LocalDateTime /value ^| find "="') do set dt=%%a
 set MONTH=%dt:~0,4%-%dt:~4,2%
 set GIFTFILE=%TOOL%\data\gifts\gifts_%MONTH%.csv
 echo Copying gifts_%MONTH%.csv...

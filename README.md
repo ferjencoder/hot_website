@@ -7,6 +7,7 @@ Member portal for HOT Clan — K:305.
 ```bash
 npm install
 npm run dev
+netlify dev
 ```
 
 ## Deploy to Netlify

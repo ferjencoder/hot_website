@@ -1,7 +1,7 @@
 import { useChestData } from '../hooks/useChestData.jsx'
 import { useAuth } from '../hooks/useAuth.jsx'
 import { Link, useSearchParams } from 'react-router-dom'
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
 
 // Category colours for column headers — matches Excel colour groupings
 const COL_CATEGORY = {
@@ -86,7 +86,7 @@ export default function Breakdown() {
     if (!isNaN(initialWeek) && initialWeek < weeks.length) {
       setWeekIndex(initialWeek)
     }
-  }, [initialWeek, weeks.length])
+  }, [initialWeek, weeks.length, setWeekIndex])
 
   if (loading) return (
     <div style={{ padding: 40, textAlign: 'center', color: 'var(--text-muted)' }}>

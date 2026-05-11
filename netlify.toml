@@ -1,11 +1,15 @@
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-
 [build]
   command = "npx vite build"
   publish = "dist"
 
 [build.environment]
   NODE_VERSION = "18"
+
+[functions]
+  directory = "netlify/functions"
+  included_files = ["private/data/**"]
+
+[[redirects]]
+  from = "/*"
+  to   = "/index.html"
+  status = 200

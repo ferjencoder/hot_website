@@ -1,5 +1,5 @@
 import { useAuth } from '../hooks/useAuth.jsx'
-import { useData, calcPoints } from '../hooks/useData.jsx'
+import { useData } from '../hooks/useData.jsx'
 import { useChestData } from '../hooks/useChestData.jsx'
 import { useMemo, useState } from 'react'
 
