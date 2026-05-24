@@ -3,7 +3,8 @@
   publish = "dist"
 
 [build.environment]
-  NODE_VERSION = "18"
+  NODE_VERSION        = "18"
+  NPM_CONFIG_REGISTRY = "https://registry.npmjs.org/"
 
 [functions]
   directory = "netlify/functions"
